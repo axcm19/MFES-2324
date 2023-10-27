@@ -1,0 +1,77 @@
+// ------------------------------------------------------------------------------------------------------------
+// MFES - Exercicio Avaliação 2 
+// 
+// Afonso Xavier Cardoso Marques
+// PG53601	
+// 
+// link solução: http://alloy4fun.inesctec.pt/TeYZzMaHHC5nbWXKq
+// ------------------------------------------------------------------------------------------------------------
+
+
+// NOTE:
+// I couldn't do check 5! The other check's are fine!
+
+sig Bucket {
+	head : lone Node
+}
+
+sig Node {
+	key : one Key,
+	prox : lone Node
+}
+
+sig Key {
+	hash : one Hash
+}
+
+sig Hash {}
+
+
+pred Invs {
+	// Specify the properties that characterize 
+	// hash tables using closed addressing (separate 
+	// chaining) for collision resolution.
+
+	// The points you will get is proportional to the 
+	// number of correct properties. To check how many
+	// points you have so far you can use the different
+ 	// commands. For example, if check Three is correct 
+	// you will have at least 3 points.
+    	// The maximum is 5 points.
+
+	// Be careful to not overspecify! 
+	// If you specify a property that is not valid in 
+	// these hash tables you get 0 points, 
+    	// even if you have some correct properties.
+	// To check if you are not overspecifying you can use 
+	// command NoOverspecification. If you have an invalid
+	// property this command will return a valid hash table 
+	// that you specification is not accepting.
+  
+     	// Every Node must be in a Bucket
+    	all n: Node | one b: Bucket | n in b.head.*(prox)
+  
+     	// Every Key must be in a Node
+     	all k: Key | one n: Node | k in n.key
+  
+     	// A Node cannot be prox to himself 
+     	all n : Node | n not in n.^(prox) or n.prox = none
+  
+     	// If one Node is prox to another, they can't be mutually prox to each other
+     	all n1, n2: Node | n2 in n1.prox implies n1 not in n2.prox
+  	
+     	// A Node cannot be prox to a Node that already has a prox
+     	all n1, n2, n3: Node | n2 in n1.prox and n3 in n2.prox implies n1 not in n3.prox
+  		
+     	// A Node can be prox to at most one other Node
+     	all n: Node | lone succ: Node | succ in n.prox 
+  
+     	//Hash values within the same Bucket must be equal
+     	all b: Bucket, n1, n2: Node | (n1 in b.head.*(prox) and n2 in b.head.*(prox)) implies n1.key.hash = n2.key.hash
+
+     	//Hash values between different Buckets must be different
+     	all b1, b2: Bucket, n1: Node | (n1 in b1.head.*(prox) and n1 in b2.head.*(prox) and b1 != b2) implies no n2: Node | (n2 in b1.head.*(prox) and n2 in b2.head.*(prox))
+}
+
+
+
