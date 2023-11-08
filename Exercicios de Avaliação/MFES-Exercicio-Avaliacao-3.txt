@@ -1,0 +1,56 @@
+// ------------------------------------------------------------------------------------------------------------
+// MFES - Exercicio Avaliação 3
+// 
+// Afonso Xavier Cardoso Marques
+// PG53601	
+// 
+// link solução: http://alloy4fun.inesctec.pt/jChHAZmA2XHMdYRFa
+// ------------------------------------------------------------------------------------------------------------
+
+// Recall the hash table Alloy model,
+// now with mutable lists inside the buckets.
+
+sig Bucket {
+	var head : lone Node
+}
+sig Node {
+	key : one Key,
+	var prox : lone Node
+}
+sig Key {
+	hash : one Hash
+}
+sig Hash {}
+
+// Specify the operation of inserting a node
+// in the hash table. The node should be 
+// inserted at the head of a bucket.
+// If the operation only works well when the
+// hash of the new node does not exist in the
+// table you get Two points. If it always 
+// works well you get Five points. Use the
+// respective commands to check how many
+// points you have.
+
+pred insert[n : Node] {
+  {
+    n.key.hash not in Bucket.head.key.hash
+    n not in Bucket.head + Bucket.head.^prox
+
+    some b: Bucket | head' = head + b->n
+    prox' = prox
+  }
+  or
+  {
+    n.key.hash in Bucket.head.key.hash
+    n not in Bucket.head + Bucket.head.^prox
+    
+    some b: Bucket {
+      n.key.hash = b.head.key.hash
+      head' = head + b->n - b->(b.head)
+      prox' = prox + n->(b.head)
+    }
+  }
+}
+
+
