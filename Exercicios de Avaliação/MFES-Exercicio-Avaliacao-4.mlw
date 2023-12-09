@@ -1,0 +1,96 @@
+(*
+------------------------------------------------------------------------------------------------------------
+MFES - Exercicio Avaliação 4
+ 
+Afonso Xavier Cardoso Marques
+PG53601	
+
+link solução: 
+https://why3.lri.fr/try/?name=test.mlw&lang=whyml&code=A7HpN7MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMsN2MFES7syExercicio%2F4Avalia%2FD%2Bn%2FD%2Bjzoz4GN4Afonso4Xavier5Cardoso5MarquesN5PG536018JNN2link2solu%2FD%2Bn%2FD%2Bjl7vBN3https7POuA2why37tA1lrisA0frA7uA1tryA7O0A2nameA7yA2testm1mlwA7lA2langAoA3whymlAqA2codeqyA7HpN7MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMsN2MFES7syExercicio%2FA7kAy2F4Avalia%2FAsA12FDs12Bnsrsy2Bjzoz4GN4Afonso4Xavier5Cardoso5MarquesN5PG536018JNN2link2solu%2Fsrsqsrsy2Bjl7vBNNfN7JoNNdyConsidere%2Fsy2Foyalgoritmo%2Fsy2Fyquicksort%2Fsy2F0em3baixo7tBJzA1fun%2Fsosnsrsy2Bjmyprincipal%2Fs42F1estsqsy2BhB6equipada1compyrespectivo%2Fsy2FH6contrato7rze3anota%2Fsqsnsrsy2B10es7Hh5asserts7Boysuficientes%2Fsy2F2paraH6permitirza3prova4online0no5TryWhy3VBHH4DefinanV%2Fsqspsrsy2BjZ7hypartition%2Fs52Fs7nzcsqsy2Bz2digoXV7orH3provei4correc%2Fsrsosrsy2Bji0douOdBHH3Dever%2Fsrsy2BhB4provaruU5sucesso3todas0as3condi%2Fsrspsrsy2B1uW0deBH6verifica%2Fsrsqsrsy2Bjgi1Ser%2Fsrsy2BhB4necess%2Fsrsy2Bh1rio3fazerBSAysplitting%2Fsy2FAsBWBH6aumentarkzn%2Fsqsy2B62merog4passossucua0umBH3valor6adequadobBFuLBNNN4moduleyQuickSort%2Fsy2FNI1use1intoA1IntHq2listqA6ListRichHqqqAySortedInt%2Fsy2FHHuL2Lema6auxiliard4correruaua7rU%2Fsps42BjTutsrsy2BhutK0seystandalone%2Fsy2FFWCCBG1let1rec3lemmaysorted%2Fs62Bappends42Bconssy2F7n0l10l2B7vAUQ7onzxoAppJ6requires774sortedj79HpppipHpp4forallzyjj7t1mempi7MzrA7RyAehHhhhzzBgAggBgpfgiAhAphH5ensuresChdbcA7KKn2Consjh7IojF7y3matchl2withJ781Nilb7HoHqhzhzto4assertaSQRRRRpd7RMzrAaAg7XunpfY7wBLvMqUTD1endNNNNNFvJvJ6functionuc7n2highXBX7opzlpvJooqrJvJRz0BvJBj7x4lengthiWHlllBlB1lowlm72o74kHvJCkCBzi7Sy4resultCoBF7yJ7HJi6Traverse5through1all6elementsH7i5compare2each5elementvN3pivotAvHH1forzjfT0toOugBLb4Choose1theyrightmost%2Fsy2FfumfAfHyinvariant%2Fsy2FRqfvb72f74RHe5PointerY5greatereAfHffziBfBX7sz1gH0ifbbTbveY2thenMAMLY0Ifa5smaller2thann0is3foundH7i2swap0itvnvqQi5pointed0byRAOHsQs7qRMAMLZ6Swappingk0atngqqTjH7nQQl7Yrqqn7YoemooonqqmmHMDg2SwapZTfeHVpXpyspecified%2Fsy2FXBbHceeeXXboovsaYkooonqqkkkkEKZ4Returnc6position2from3wherevav12doneaHgggHpNNFvXvXvXuMXzl7vXvW7oqqqJvY77vFvY79BHpp4permutjooH5variantovVopF7yHvHqvzH78vHvJsHrvIzxnoUXvK7rAvOUfv7jj0inJ8JCCB8JjkA7mmQqoH8JCCB8JojnnnqoN8J8JCCCCvIXvIzy7vO7tvKpfgYqAveAbR7wN8J8JCCCCfffzzBeAeeepceegAfAoffMPd7GKKnSmj7GoMBvLNNNNNNHypredicate%2Fs32Fyiss12Basy2Bsorting%2Fsy2Balgorithm%2Fsy2FOzfAZBv7Ybrr7oQJV0alBmAnnUv9oiirj7O3v7ooooNF2goalehBswENNNNb%2FNuBN7JoNNuAyConsidere%2Fzoyalgoritmo%2Fyquicksort%2F0em3baixo7tBJzA1fun%2FD%2Bn%2FD%2Bjmyprincipal%2F1est%2FD%2BhB6equipada1compyrespectivo%2FH6contrato7rze3anota%2FD%2Bn%2FD%2B10es7Hh5asserts7Boysuficientes%2F2paraH6permitirza3prova4online0no5TryWhy3VBHH4DefinanV%2FD%2Bn%2FD%2BjZ7hypartition%2Fs7nzc%2FD%2Bz2digoXV7orH3provei4correc%2FD%2Bn%2FD%2Bji0dovFdBHH3Dever%2FD%2BhB4provarvL5sucesso3todas0as3condi%2FD%2Bn%2FD%2B1vN0deBH6verifica%2FD%2Bn%2FD%2BjgiB1Ser%2FD%2BhB4necess%2FD%2Bh1rio3fazerBSAysplitting%2FAsBWBH6aumentarkzn%2FD%2B62merog4passossvTvR0umBH3valor6adequadobBFvCBNNN4moduleyQuickSort%2FNI1use1intoA1IntHq2listqA6ListRichHqqqySortedInt%2FHHvC2Lema6auxiliard4corrervRvR7rU%2FD%2BjTvk%2FD%2BhvkK0seystandalone%2FFWCCBG1let1rec3lemmaysorted%2Bappend%2Bcons%2F7n0l10l2B7vAUQ7onzxoAppJ6requires774sortedj79HpppipHpp4forallzyjj7t1mempi7MzrA7RyAehHhhhzzBgAggBgpfgiAhAphH5ensuresChdbcA7KKn2Consjh7IojF7yB3matchl2withJ781Nilb7HoHqhzhzto4assertaSQRRRRpd7RMzrag7XunpfY7wBLwDqUTD1endNNNFwAwA6functionvT7n3pivotXBX7op1lstpBwAooqopp7rrroHwCQgmzilzjmS4result0inMLmwMYBef7tBQpgwKrBwBBYf7FlHhhzygBgggpcgiBhBphhHh4permutVrd7KqiwDmHo4lengthn7qrnBWBrk7I9MBqJwDqwDL78wDZhrQsbHowEzhztlLwQkbjcjeBwNTjwQH0ifgRo2thenKgdoffffE2elseKmoommmmMDwKNNFcwKwKvDizlB7vAwJwMjqqqJwJ77wAwI79BHppwKjooH5variantowNopF7yHwOqwPH78wPwPsHrSzxnoUXwDPAwGUfwNjjwNJ8JCCB8JjkA7mmQqoH8JCCB8JojnnnqoN8J8JCCCCwCXwFzy7vAO7twFpfgYqAwLAbR7wN8J8JCCCCfffzzeAeeepceegAfAoffMPd7GKKnSmj7GoMBwONNNNNNHypredicate%2Fyis%2Ba%2Bsorting%2Balgorithm%2FOzfAZBwQYbrr7oQJV0almAnnUwSoiirj7O3wQooooNF2goalehswZNNNNb
+------------------------------------------------------------------------------------------------------------
+*)
+
+(* Considere o algoritmo quicksort em baixo. 
+   A função principal está equipada com o respectivo
+   contrato, e anotações ("asserts") suficientes para
+   permitir a prova online no TryWhy3. 
+   
+   Defina a função "partition" (código e contrato) e
+   prove a correcção do algoritmo. 
+   
+   Deverá provar com sucesso todas as condições de 
+   verificação. Será necessário fazer "splitting" e 
+   aumentar o número de passos de prova para um 
+   valor adequado. 
+ *) 
+
+
+module QuickSort
+
+  use int.Int
+  use list.ListRich
+  use list.SortedInt
+  
+  (* Lema auxiliar para correr no TryWhy3, não necessário
+     se standalone
+   *)     
+  let rec lemma sorted_append_cons (l1 l2 :list int) (x:int)
+    requires { sorted l1 }
+    requires { sorted l2 }
+    requires { forall y :int. mem y l1 -> y<=x }
+    requires { forall z :int. mem z l2 -> x<=z }
+    ensures  { sorted (l1++(Cons x l2)) }
+  = match l1 with
+    | Nil -> ()
+    | Cons h t -> assert { forall y :int. mem y l1 <-> y=h \/ mem y t } ; 
+        sorted_append_cons t l2 x
+    end
+
+
+
+  let rec function partition (pivot: int) (lst : list int) : (list int, list int)
+  ensures { let (i, j) = result in
+            (forall x : int. mem x i -> x <= pivot) &&
+            (forall y : int. mem y j -> pivot <= y) &&
+            (permut lst (i ++ j)) &&
+            (length i + length j = length lst)}
+  =
+    match lst with
+        | Nil -> (Nil, Nil)
+        | Cons h t ->
+            let (i, j) = partition pivot t in
+            if h <= pivot then
+               (Cons h i, j)
+            else
+               (i, Cons h j)
+    end
+
+
+  let rec function quicksort (l :list int) : list int
+    ensures { sorted result } 
+    ensures { permut l result }
+    variant { length l }
+  =
+  match l with
+  | Nil -> Nil
+  | Cons x l -> let (l1,l2) = partition x l in
+    	     	let l1' = quicksort l1 in
+    	     	let l2' = quicksort l2 in
+		        assert { forall y :int. mem y l1' -> y<=x } ;
+		        assert { forall z :int. mem z l2' -> x<=z } ;
+                l1'++(Cons x l2')
+  end
+
+
+
+
+
+
+  predicate is_a_sorting_algorithm (f: list int -> list int) =
+    forall al :list int. permut al (f al) /\ sorted (f al)
+
+  goal is_a_sorting_algorithm : is_a_sorting_algorithm quicksort
+
+
+
+end
